@@ -80,4 +80,5 @@ export default ({ item, lang }: { item: data_type; lang: string }) => {
 
 export const routes = {
   "/pdf-to-epub": { item: tool["PDF_to_EPUB"] },
+  "/epub-to-pdf": { item: tool["EPUB_to_PDF"] },
 };

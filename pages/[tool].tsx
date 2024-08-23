@@ -92,4 +92,5 @@ export default ({ item }: { item: data_type }) => {
 // export default ToolPage;
 export const routes = {
   "/pdf-to-epub": { item: tool["PDF_to_EPUB"] },
+  "/epub-to-pdf": { item: tool["EPUB_to_PDF"] },
 };

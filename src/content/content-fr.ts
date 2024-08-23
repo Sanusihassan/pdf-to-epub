@@ -12,35 +12,60 @@ import type {
 export const tool: _tool = {
   PDF_to_EPUB: {
     title: "Convertisseur PDF en EPUB",
-    seoTitle:
-      "Convertir PDF en EPUB en ligne - Convertisseur gratuit de PDF en EPUB",
+    seoTitle: "Convertir PDF en EPUB en ligne gratuitement - Transformation facile et rapide",
     description:
-      "Convertissez vos documents PDF en format EPUB pour les lire facilement sur les liseuses électroniques et les tablettes.",
+      "Convertissez vos documents PDF au format EPUB pour les lire facilement sur les liseuses électroniques et les tablettes.",
     color: "#86b910",
-    type: ".epub",
+    type: ".pdf",
     to: "/pdf-to-epub",
     features: [
       {
         title: "Complètement gratuit et sans inscription",
         description:
-          "PDFEquips offre un service gratuit de conversion de PDF en EPUB en ligne. Il n'est pas nécessaire de créer un compte et nous ne vous demandons jamais votre adresse e-mail ou vos informations de carte de crédit.",
+          "PDFEquips offre un service gratuit de conversion de PDF en EPUB en ligne. Il n'est pas nécessaire de créer un compte, et nous ne vous demandons jamais votre adresse e-mail ou vos informations de carte de crédit.",
       },
       {
         title: "Conversion EPUB de haute qualité",
         description:
-          "PDFEquips convertit avec précision vos documents PDF en format EPUB, en préservant autant que possible la mise en page et le formatage originaux.",
+          "PDFEquips convertit avec précision vos documents PDF au format EPUB, en préservant autant que possible la mise en page et le formatage originaux.",
       },
       {
-        title: "Convertir PDF en EPUB en ligne de manière sécurisée",
+        title: "Conversion PDF en EPUB en ligne sécurisée",
         description:
           "Tous les fichiers que vous téléchargez et créez sur nos serveurs sont cryptés pour des raisons de sécurité à l'aide de TLS. Ils seront immédiatement et définitivement supprimés après le traitement. Pour plus d'informations, veuillez consulter notre politique de confidentialité.",
       },
     ],
     keywords:
-      "convertir PDF en EPUB, convertisseur de PDF en EPUB, PDF en EPUB gratuit, PDF en EPUB en ligne, conversion de PDF en EPUB, convertir PDF en EPUB en ligne gratuitement, convertisseur gratuit de PDF en EPUB, outil de PDF en EPUB, convertir PDF en format EPUB, outil de conversion de PDF en EPUB en ligne, conversion sécurisée de PDF en EPUB, convertisseur de PDF en EPUB en ligne",
+      "convertir PDF en EPUB, convertisseur PDF en EPUB, PDF en EPUB gratuit, PDF en EPUB en ligne, conversion PDF en EPUB, convertir PDF en EPUB en ligne gratuitement, convertisseur PDF en EPUB gratuit, outil de conversion PDF en EPUB, convertir PDF en format EPUB, outil de conversion PDF en EPUB en ligne, conversion sécurisée de PDF en EPUB, convertisseur PDF en EPUB en ligne",
   },
-
-  // ... (more tools)
+  EPUB_to_PDF: {
+    title: "Convertisseur EPUB en PDF",
+    seoTitle: "Conversion EPUB en PDF en ligne - Outil rapide et gratuit",
+    description:
+      "Convertissez vos fichiers EPUB au format PDF pour les partager et les imprimer facilement.",
+    color: "#86b910",
+    type: ".epub",
+    to: "/epub-to-pdf",
+    features: [
+      {
+        title: "Gratuit et facile à utiliser",
+        description:
+          "PDFEquips fournit un service de conversion EPUB en PDF en ligne complètement gratuit sans besoin d'inscription ou d'inscription. Il vous suffit de télécharger votre fichier EPUB et d'obtenir un PDF en quelques secondes.",
+      },
+      {
+        title: "Conversion PDF de haute qualité",
+        description:
+          "Notre convertisseur transforme avec précision vos fichiers EPUB au format PDF, en assurant la préservation du texte original, des images et du formatage.",
+      },
+      {
+        title: "Processus de conversion sécurisé",
+        description:
+          "Tous les fichiers téléchargés et convertis sur notre plateforme sont cryptés de manière sécurisée avec TLS. Ils sont automatiquement supprimés de nos serveurs après le traitement. Veuillez consulter notre politique de confidentialité pour plus de détails.",
+      },
+    ],
+    keywords:
+      "convertir EPUB en PDF, convertisseur EPUB en PDF, EPUB en PDF gratuit, EPUB en PDF en ligne, conversion EPUB en PDF, convertir EPUB en PDF en ligne gratuitement, convertisseur EPUB en PDF gratuit, outil de conversion EPUB en PDF, convertir EPUB en format PDF, outil de conversion EPUB en PDF en ligne, conversion sécurisée de EPUB en PDF, convertisseur EPUB en PDF en ligne",
+  },
 };
 
 export const tools: _tools = {
@@ -52,11 +77,13 @@ export const tools: _tools = {
 export const edit_page: _edit_page = {
   edit_page_titles: {
     pdf_to_epub: "Options de conversion de PDF en EPUB",
+    epub_to_pdf: "Options de conversion de EPUB en PDF",
   },
   loader_text: "Veuillez patienter...",
   add_more_button: "Ajouter plus de fichiers",
   action_buttons: {
     pdf_to_epub: "Convertir PDF en EPUB",
+    epub_to_pdf: "Convertir EPUB en PDF",
   },
   pages: "pages",
   page: "page",
@@ -68,6 +95,10 @@ export const downloadFile: _downloadFile = {
       "Les fichiers PDF ont été convertis en EPUB !",
       "Le fichier PDF a été converti en EPUB !",
     ],
+    "epub-to-pdf": [
+      "Les fichiers EPUB ont été convertis en PDF !",
+      "Le fichier EPUB a été converti en PDF !",
+    ],
   },
 
   btnText: {
@@ -75,10 +106,15 @@ export const downloadFile: _downloadFile = {
       "Télécharger les fichiers EPUB convertis",
       "Télécharger le fichier EPUB converti",
     ],
+    "epub-to-pdf": [
+      "Téléch-rger les fichiers PDF convertis",
+      "Télécharger le fichier PDF converti",
+    ],
   },
 
   backto: {
-    "pdf-to-epub": "Retour à Convertir PDF en EPUB",
+    "pdf-to-epub": "Retour à convertir PDF en EPUB",
+    "epub-to-pdf": "Retour à convertir EPUB en PDF",
   },
 };
 export const errors: _errors = {

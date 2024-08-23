@@ -11,59 +11,104 @@ import type {
 
 export const tool: _tool = {
   PDF_to_EPUB: {
-    title: "PDF 轉 EPUB 轉換器",
-    seoTitle: "在線將 PDF 轉換為 EPUB - 免費 PDF 轉 EPUB 轉換器",
+    title: "PDF 转 EPUB",
+    seoTitle: "在线免费将 PDF 转换为 EPUB - 简单快速转换",
     description:
-      "將您的 PDF 文檔轉換為 EPUB 格式，以便在電子閱讀器和平板電腦上輕鬆閱讀。",
+      "将您的 PDF 文档转换为 EPUB 格式，以便在电子阅读器和平板电脑上轻松阅读。",
     color: "#86b910",
-    type: ".epub",
+    type: ".pdf",
     to: "/pdf-to-epub",
     features: [
       {
-        title: "完全免費且無需註冊",
+        title: "完全免费，无需注册",
         description:
-          "PDFEquips 提供免費的線上 PDF 轉 EPUB 轉換服務。無需註冊帳戶，我們也不會詢問您的電子郵件地址或信用卡資訊。",
+          "PDFEquips 提供免费的在线 PDF 到 EPUB 转换服务。无需创建帐户，我们也不会询问您的电子邮件地址或信用卡信息。",
       },
       {
-        title: "高品質的 EPUB 轉換",
+        title: "高质量的 EPUB 转换",
         description:
-          "PDFEquips 精準地將您的 PDF 文檔轉換為 EPUB 格式，盡可能保留原始的佈局和格式。",
+          "PDFEquips 将您的 PDF 文档准确地转换为 EPUB 格式，尽可能保留原始布局和格式。",
       },
       {
-        title: "在線安全地將 PDF 轉換為 EPUB",
+        title: "在线安全转换 PDF 到 EPUB",
         description:
-          "您在我們的伺服器上上傳和創建的所有檔案都使用 TLS 加密，以確保安全性。處理後，這些檔案將立即且永久地刪除。如需了解更多資訊，請參閱我們的隱私政策。",
+          "您在我们的服务器上上传和创建的所有文件都使用 TLS 加密以确保安全。处理后将立即永久删除。有关更多信息，请参阅我们的隐私政策。",
       },
     ],
     keywords:
-      "PDF 轉 EPUB、PDF 轉 EPUB 轉換器、免費 PDF 轉 EPUB、在線 PDF 轉 EPUB、PDF 轉 EPUB 轉換、在線免費將 PDF 轉換為 EPUB、免費 PDF 轉 EPUB 轉換器、PDF 轉 EPUB 工具、將 PDF 轉換為 EPUB 格式、在線 PDF 轉 EPUB 轉換工具、安全的 PDF 轉 EPUB 轉換、PDF 轉 EPUB 在線轉換器",
+      "将 PDF 转换为 EPUB，PDF 到 EPUB 转换器，免费 PDF 到 EPUB，在线 PDF 到 EPUB，PDF 到 EPUB 转换，免费在线将 PDF 转换为 EPUB，免费 PDF 到 EPUB 转换器，PDF 到 EPUB 工具，将 PDF 转换为 EPUB 格式，在线 PDF 到 EPUB 转换工具，安全的 PDF 到 EPUB 转换，在线 PDF 到 EPUB 转换器",
+  },
+  EPUB_to_PDF: {
+    title: "EPUB 转 PDF",
+    seoTitle: "在线 EPUB 到 PDF 转换 - 快速免费工具",
+    description:
+      "将您的 EPUB 文件转换为 PDF 格式，以便轻松共享和打印。",
+    color: "#86b910",
+    type: ".epub",
+    to: "/epub-to-pdf",
+    features: [
+      {
+        title: "免费且易于使用",
+        description:
+          "PDFEquips 提供完全免费的在线 EPUB 到 PDF 转换服务，无需注册或注册。只需上传您的 EPUB 文件即可在几秒钟内获得 PDF。",
+      },
+      {
+        title: "高质量的 PDF 转换",
+        description:
+          "我们的转换器将您的 EPUB 文件准确地转换为 PDF 格式，确保保留原始文本、图像和格式。",
+      },
+      {
+        title: "安全的转换过程",
+        description:
+          "在我们平台上上传和转换的所有文件都使用 TLS 安全加密。处理后会自动从我们的服务器删除。有关更多详细信息，请参阅我们的隐私政策。",
+      },
+    ],
+    keywords:
+      "将 EPUB 转换为 PDF，EPUB 到 PDF 转换器，免费 EPUB 到 PDF，在线 EPUB 到 PDF，EPUB 到 PDF 转换，免费在线将 EPUB 转换为 PDF，免费 EPUB 到 PDF 转换器，EPUB 到 PDF 工具，将 EPUB 转换为 PDF 格式，在线 EPUB 到 PDF 转换工具，安全的 EPUB 到 PDF 转换，在线 EPUB 到 PDF 转换器",
   },
 };
 
 export const edit_page: _edit_page = {
   edit_page_titles: {
-    pdf_to_epub: "PDF 轉 EPUB 轉換選項",
+    pdf_to_epub: "PDF 转 EPUB 选项",
+    epub_to_pdf: "EPUB 转 PDF 选项",
   },
-  loader_text: "請稍等...",
-  add_more_button: "添加更多檔案",
+  loader_text: "请稍等...",
+  add_more_button: "添加更多文件",
   action_buttons: {
-    pdf_to_epub: "將 PDF 轉換為 EPUB",
+    pdf_to_epub: "将 PDF 转换为 EPUB",
+    epub_to_pdf: "将 EPUB 转换为 PDF",
   },
-  pages: "頁面",
-  page: "頁面",
+  pages: "页",
+  page: "页",
 };
 
 export const downloadFile: _downloadFile = {
   titles: {
-    "pdf-to-epub": ["PDF 檔案已轉換為 EPUB！", "PDF 檔案已轉換為 EPUB！"],
+    "pdf-to-epub": [
+      "PDF 文件已转换为 EPUB！",
+      "PDF 文件已转换为 EPUB！",
+    ],
+    "epub-to-pdf": [
+      "EPUB 文件已转换为 PDF！",
+      "EPUB 文件已转换为 PDF！",
+    ],
   },
 
   btnText: {
-    "pdf-to-epub": ["下載轉換後的 EPUB 檔案", "下載轉換後的 EPUB 檔案"],
+    "pdf-to-epub": [
+      "下载转换后的 EPUB 文件",
+      "下载转换后的 EPUB 文件",
+    ],
+    "epub-to-pdf": [
+      "下载转换后的 PDF 文件",
+      "下载转换后的 PDF 文件",
+    ],
   },
 
   backto: {
-    "pdf-to-epub": "返回 PDF 轉 EPUB",
+    "pdf-to-epub": "返回转换 PDF 到 EPUB",
+    "epub-to-pdf": "返回转换 EPUB 到 PDF",
   },
 };
 

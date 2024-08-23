@@ -12,34 +12,62 @@ import type {
 export const tool: _tool = {
   PDF_to_EPUB: {
     title: "Convertidor de PDF a EPUB",
-    seoTitle:
-      "Convertir PDF a EPUB en línea - Convertidor gratuito de PDF a EPUB",
+    seoTitle: "Convierte PDF a EPUB en línea de forma gratuita - Transformación fácil y rápida",
     description:
       "Convierte tus documentos PDF en formato EPUB para leerlos fácilmente en lectores electrónicos y tabletas.",
     color: "#86b910",
-    type: ".epub",
+    type: ".pdf",
     to: "/pdf-to-epub",
     features: [
       {
         title: "Completamente gratuito y sin registro",
         description:
-          "PDFEquips ofrece un servicio gratuito de conversión de PDF a EPUB en línea. No es necesario crear una cuenta y nunca le pedimos su dirección de correo electrónico o información de tarjeta de crédito.",
+          "PDFEquips ofrece un servicio gratuito de conversión de PDF a EPUB en línea. No es necesario crear una cuenta, y nunca le pedimos su dirección de correo electrónico o información de tarjeta de crédito.",
       },
       {
         title: "Conversión de EPUB de alta calidad",
         description:
-          "PDFEquips convierte con precisión tus documentos PDF en formato EPUB, preservando el diseño y el formato originales en la medida de lo posible.",
+          "PDFEquips convierte con precisión sus documentos PDF en formato EPUB, preservando el diseño y el formato originales en la medida de lo posible.",
       },
       {
-        title: "Convertir PDF a EPUB en línea de forma segura",
+        title: "Convierte PDF a EPUB en línea de forma segura",
         description:
           "Todos los archivos que cargue y cree en nuestros servidores están encriptados por razones de seguridad utilizando TLS. Se eliminarán de inmediato y permanentemente después del procesamiento. Para obtener más información, consulte nuestra política de privacidad.",
       },
     ],
     keywords:
-      "convertir PDF a EPUB, convertidor de PDF a EPUB, PDF a EPUB gratis, PDF a EPUB en línea, conversión de PDF a EPUB, convertir PDF a EPUB en línea gratis, convertidor gratuito de PDF a EPUB, herramienta de PDF a EPUB, convertir PDF a formato EPUB, herramienta de conversión de PDF a EPUB en línea, conversión segura de PDF a EPUB, convertidor de PDF a EPUB en línea",
+      "convertir PDF a EPUB, convertidor de PDF a EPUB, PDF a EPUB gratis, PDF a EPUB en línea, conversión de PDF a EPUB, convertir PDF a EPUB en línea gratis, convertidor de PDF a EPUB gratis, herramienta de conversión de PDF a EPUB, convertir PDF a formato EPUB, herramienta de conversión de PDF a EPUB en línea, conversión segura de PDF a EPUB, convertidor de PDF a EPUB en línea",
+  },
+  EPUB_to_PDF: {
+    title: "Convertidor de EPUB a PDF",
+    seoTitle: "Conversión de EPUB a PDF en línea - Herramienta rápida y gratuita",
+    description:
+      "Convierte tus archivos EPUB en formato PDF para compartirlos e imprimirlos fácilmente.",
+    color: "#86b910",
+    type: ".epub",
+    to: "/epub-to-pdf",
+    features: [
+      {
+        title: "Gratis y fácil de usar",
+        description:
+          "PDFEquips proporciona un servicio de conversión de EPUB a PDF en línea completamente gratuito sin necesidad de registro o inscripción. Simplemente cargue su archivo EPUB y obtenga un PDF en segundos.",
+      },
+      {
+        title: "Conversión de PDF de alta calidad",
+        description:
+          "Nuestro convertidor transforma con precisión sus archivos EPUB en formato PDF, asegurando que se preserve el texto original, las imágenes y el formato.",
+      },
+      {
+        title: "Proceso de conversión seguro",
+        description:
+          "Todos los archivos cargados y convertidos en nuestra plataforma están encriptados de forma segura con TLS. Se eliminan automáticamente de nuestros servidores después del procesamiento. Consulte nuestra política de privacidad para obtener más detalles.",
+      },
+    ],
+    keywords:
+      "convertir EPUB a PDF, convertidor de EPUB a PDF, EPUB a PDF gratis, EPUB a PDF en línea, conversión de EPUB a PDF, convertir EPUB a PDF en línea gratis, convertidor de EPUB a PDF gratis, herramienta de conversión de EPUB a PDF, convertir EPUB a formato PDF, herramienta de conversión de EPUB a PDF en línea, conversión segura de EPUB a PDF, convertidor de EPUB a PDF en línea",
   },
 };
+
 export const tools: _tools = {
   select: "Seleccionar",
   or_drop: "o soltar archivos aquí",
@@ -50,11 +78,13 @@ export const tools: _tools = {
 export const edit_page: _edit_page = {
   edit_page_titles: {
     pdf_to_epub: "Opciones de conversión de PDF a EPUB",
+    epub_to_pdf: "Opciones de conversión de EPUB a PDF",
   },
   loader_text: "Por favor, espere...",
   add_more_button: "Agregar más archivos",
   action_buttons: {
     pdf_to_epub: "Convertir PDF a EPUB",
+    epub_to_pdf: "Convertir EPUB a PDF",
   },
   pages: "páginas",
   page: "página",
@@ -66,6 +96,10 @@ export const downloadFile: _downloadFile = {
       "¡Los archivos PDF se han convertido a EPUB!",
       "¡El archivo PDF se ha convertido a EPUB!",
     ],
+    "epub-to-pdf": [
+      "¡Los archivos EPUB se han convertido a PDF!",
+      "¡El archivo EPUB se ha convertido a PDF!",
+    ],
   },
 
   btnText: {
@@ -73,10 +107,15 @@ export const downloadFile: _downloadFile = {
       "Descargar archivos EPUB convertidos",
       "Descargar archivo EPUB convertido",
     ],
+    "epub-to-pdf": [
+      "Descargar archivos PDF convertidos",
+      "Descargar archivo PDF convertido",
+    ],
   },
 
   backto: {
-    "pdf-to-epub": "Volver a Convertir PDF a EPUB",
+    "pdf-to-epub": "Volver a convertir PDF a EPUB",
+    "epub-to-pdf": "Volver a convertir EPUB a PDF",
   },
 };
 export const errors: _errors = {
