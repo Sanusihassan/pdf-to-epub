@@ -46,7 +46,7 @@ export const handleUpload = async (
   let url;
   // @ts-ignore
   if (process.env.NODE_ENV === "development") {
-    url = `http://127.0.0.1:5000/${state.path}`;
+    url = `https://www.pdfequips.com/api/${state.path}`;
     // url = `https://5000-planetcreat-pdfequipsap-te4zoi6qkr3.ws-eu102.gitpod.io/${state.path}`;
   } else {
     url = `/api/${state.path}`;
@@ -64,9 +64,9 @@ export const handleUpload = async (
       outputFileMimeType: "application/zip",
       outputFileName: `PDFEquips-${state.path}.zip`,
     },
-    "application/pdf": {
-      outputFileMimeType: "application/pdf",
-      outputFileName: `${originalFileName}.pdf`,
+    "application/epub+zip": {
+      outputFileMimeType: "application/epub+zip",
+      outputFileName: `${originalFileName}.epub`,
     },
     "application/msword": {
       outputFileMimeType: "application/msword",
