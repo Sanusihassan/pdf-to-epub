@@ -109,6 +109,13 @@ export const downloadFile = {
   },
 };
 
+export const footer = {
+  brand: "PDFEquips",
+  terms: "terms",
+  conditions: "conditions",
+  privacy_policy: "privacy policy",
+};
+
 export const errors = {
   EMPTY_FILE: {
     message: "The file is empty. Please choose a valid file.",
