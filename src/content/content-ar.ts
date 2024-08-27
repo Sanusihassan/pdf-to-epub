@@ -117,6 +117,15 @@ export const downloadFile: _downloadFile = {
     "epub-to-pdf": "العودة إلى تحويل EPUB إلى PDF",
   },
 };
+
+export const footer: _footer = {
+  brand: "PDFEquips",
+  terms: "الشروط",
+  conditions: "والأحكام",
+  privacy_policy: "سياسة الخصوصية",
+};
+
+
 export const errors: _errors = {
   EMPTY_FILE: {
     message: "الملف فارغ. يرجى اختيار ملف صالح.",

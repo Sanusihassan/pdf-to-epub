@@ -117,6 +117,14 @@ export const downloadFile: _downloadFile = {
     "epub-to-pdf": "Retour à convertir EPUB en PDF",
   },
 };
+
+export const footer: _footer = {
+  brand: "PDFEquips",
+  terms: "conditions",
+  conditions: "conditions d'utilisation",
+  privacy_policy: "politique de confidentialité",
+};
+
 export const errors: _errors = {
   EMPTY_FILE: {
     message: "Le fichier est vide. Veuillez choisir un fichier valide.",

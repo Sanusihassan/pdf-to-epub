@@ -7,18 +7,16 @@ import {
   tool,
   tools,
   downloadFile,
+  footer,
 } from "../src/content/content";
 import { useRouter } from "next/router";
 import { OpenGraph } from "pdfequips-open-graph/OpenGraph";
+import { Features } from "@/components/Features";
+import { Footer } from "@/components/Footer";
+import HowTo from "@/components/HowTo";
+import { howToSchemas, howToType } from "@/src/how-to/how-to-en";
+import { tool as _tool } from "@/content";
 
-export type data_type = {
-  title: string;
-  description: string;
-  color: string;
-  type: string;
-  to: string;
-  seoTitle: string;
-};
 
 export async function getStaticPaths() {
   const paths = Object.keys(routes).map((key) => ({
@@ -40,7 +38,7 @@ export async function getStaticProps({
   return { props: { item } };
 }
 
-export default ({ item }: { item: data_type }) => {
+export default ({ item }: { item: _tool["EPUB_to_PDF"] }) => {
   const router = useRouter();
   const { asPath } = router;
   const websiteSchema = {
@@ -50,6 +48,7 @@ export default ({ item }: { item: data_type }) => {
     description: item.description,
     url: `https://www.pdfequips.com${asPath}`,
   };
+  const howToSchema = item.to === "/pdf-to-epub"? howToSchemas.PDFToEPUBHowTo : howToSchemas.EPUBToPDFHowTo;
   return (
     <>
       <Head>
@@ -85,6 +84,19 @@ export default ({ item }: { item: data_type }) => {
         page={edit_page.page}
         downloadFile={downloadFile}
       />
+      <div className="container">
+        <Features
+          features={item.features as { title: string; description: string }[]}
+        />
+      </div>
+      <div className="container">
+        <HowTo
+          howTo={howToSchema as howToType}
+          alt={item.seoTitle}
+          imgSrc={item.to.replace("/", "")}
+        />
+      </div>
+      <Footer footer={footer} title={item.seoTitle.split("-")[1]} />
     </>
   );
 };

@@ -119,6 +119,13 @@ export const tools: _tools = {
   drop_files: "फ़ाइलें यहाँ खींचें",
 };
 
+export const footer: _footer = {
+  brand: "PDFEquips",
+  terms: "शर्तें",
+  conditions: "उपयोग की शर्तें",
+  privacy_policy: "गोपनीयता नीति",
+};
+
 export const errors: _errors = {
   EMPTY_FILE: {
     message: "फ़ाइल खाली है। कृपया एक मान्य फ़ाइल चुनें।",

@@ -7,11 +7,17 @@ import {
   tool,
   tools,
   downloadFile,
+  footer,
 } from "../../src/content/content-ar";
 import { useRouter } from "next/router";
 
-import type { data_type } from "../[tool]";
 import { OpenGraph } from "pdfequips-open-graph/OpenGraph";
+import { tool as _tool } from "@/content";
+import { Features } from "@/components/Features";
+import { Footer } from "@/components/Footer";
+import HowTo from "@/components/HowTo";
+import { howToType } from "@/src/how-to/how-to-en";
+import { howToSchemas } from "@/src/how-to/how-to-ar";
 export async function getStaticPaths() {
   const paths = Object.keys(routes).map((key) => ({
     params: { tool: key.substring(1) },
@@ -32,7 +38,13 @@ export async function getStaticProps({
   return { props: { item } };
 }
 
-export default ({ item, lang }: { item: data_type; lang: string }) => {
+export default ({
+  item,
+  lang,
+}: {
+  item: _tool["EPUB_to_PDF"];
+  lang: string;
+}) => {
   const router = useRouter();
   const { asPath } = router;
   const websiteSchema = {
@@ -42,6 +54,10 @@ export default ({ item, lang }: { item: data_type; lang: string }) => {
     description: item.description,
     url: `https://www.pdfequips.com${asPath}`,
   };
+  const howToSchema =
+    item.to === "/pdf-to-epub"
+      ? howToSchemas.PDFToEPUBHowTo
+      : howToSchemas.EPUBToPDFHowTo;
   return (
     <>
       <Head>
@@ -75,6 +91,19 @@ export default ({ item, lang }: { item: data_type; lang: string }) => {
         page={edit_page.page}
         downloadFile={downloadFile}
       />
+      <div className="container">
+        <Features
+          features={item.features as { title: string; description: string }[]}
+        />
+      </div>
+      <div className="container">
+        <HowTo
+          howTo={howToSchema as howToType}
+          alt={item.seoTitle}
+          imgSrc={item.to.replace("/", "")}
+        />
+      </div>
+      <Footer footer={footer} title={item.seoTitle.split("-")[1]} />
     </>
   );
 };
