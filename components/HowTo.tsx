@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { ToolState } from "../src/store";
@@ -17,28 +16,24 @@ const HowTo = ({
   const stateShowTool = useSelector(
     (state: { tool: ToolState }) => state.tool.showTool
   );
-  useEffect(() => {
-    console.log(stateShowTool);
-  }, [stateShowTool]);
   return (
     <>
       <div
-        className={`how-to row align-items-center py-3${
-          stateShowTool ? "" : " d-none"
-        }`}
+        className={`how-to row align-items-center py-3${stateShowTool ? "" : " d-none"
+          }`}
       >
         <div className="col-12 col-md-6 text-center image">
           <picture>
             <source
-              srcSet={`/images/${imgSrc}-ad-xs.png`}
+              srcSet={`/images/how-to-convert-${imgSrc}-ad-xs.png`}
               media="(max-width: 575px)"
             />
             <source
-              srcSet={`/images/${imgSrc}-ad-md.png`}
+              srcSet={`/images/how-to-convert-${imgSrc}-ad-md.png`}
               media="(min-width: 575px) and (max-width: 1200px)"
             />
             <source
-              srcSet={`/images/${imgSrc}-ad-xl.png`}
+              srcSet={`/images/how-to-convert-${imgSrc}-ad-xl.png`}
               media="(min-width: 1200px)"
             />
             <img
