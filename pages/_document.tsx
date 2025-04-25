@@ -1,5 +1,4 @@
-// @ts-ignore
-import { Partytown } from '@builder.io/partytown/react';
+import { Partytown } from "@qwik.dev/partytown/react";
 import Document, {
   Html,
   Head,
